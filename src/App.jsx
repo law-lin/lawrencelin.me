@@ -2,13 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { ReactTerminal } from 'react-terminal';
 import {
   useColorMode,
-  Heading,
-  Text,
   IconButton,
-  Stack,
-  Box,
-  StackDivider,
-  Flex,
+  Container,
   Tabs,
   TabList,
   TabPanels,
@@ -103,36 +98,6 @@ function App() {
           <TabPanels>
             <TabPanel>
               <AboutPanel />
-              <Box mx='20'>
-                <Stack divider={<StackDivider borderColor='gray.200' />}>
-                  <Box>
-                    <Flex>
-                      <Heading size='lg'>About Me</Heading>
-                      <Box flex='1' px='5'>
-                        <Text>I'm a software developer.</Text>
-                      </Box>
-                    </Flex>
-                  </Box>
-                  <Box>
-                    <Flex>
-                      <Heading size='lg'>Education</Heading>
-                      <Box flex='1' px='5'>
-                        <Heading size='lg'>Stony Brook University</Heading>
-                        <Text>B.S. in Computer Science</Text>
-                      </Box>
-                    </Flex>
-                  </Box>
-                  <Box>
-                    <Flex>
-                      <Heading size='lg'>Skills</Heading>
-                      <Box flex='1' px='5'>
-                        <Heading size='lg'>Stony Brook University</Heading>
-                        <Text>B.S. in Computer Science</Text>
-                      </Box>
-                    </Flex>
-                  </Box>
-                </Stack>
-              </Box>
             </TabPanel>
             <TabPanel>
               <ExperiencePanel />
@@ -142,13 +107,14 @@ function App() {
             </TabPanel>
           </TabPanels>
         </Tabs>
-
-        <IconButton
-          onClick={() => {
-            elevator.elevate();
-          }}
-          icon={<GiElevator />}
-        />
+        <Container textAlign='center'>
+          <IconButton
+            onClick={() => {
+              elevator.elevate();
+            }}
+            icon={<GiElevator />}
+          />
+        </Container>
       </article>
     </div>
   );
