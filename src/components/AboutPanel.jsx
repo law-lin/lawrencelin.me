@@ -8,8 +8,6 @@ import {
   Box,
   useColorMode,
   Flex,
-  Tag,
-  Divider,
   SimpleGrid,
   List,
   ListItem,
@@ -26,25 +24,33 @@ import {
 } from 'react-icons/fa';
 
 const AboutPanel = () => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
 
   return (
     <>
       <section style={{ padding: 0, margin: 0 }}>
         <Container display='flex' flexDirection='column' alignItems='center'>
-          <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Black&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light' />
+          <img
+            src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Black&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light'
+            alt='avatar'
+          />
           <Heading size='3xl'>Lawrence Lin</Heading>
           <Text fontSize='3xl'>Software Developer</Text>
           <Flex mt='5'>
             <a
               href='https://www.linkedin.com/in/lawrencelin101/'
               target='_blank'
+              rel='noreferrer'
             >
               <Button mx='2'>
                 <FaLinkedin />
               </Button>
             </a>
-            <a href='https://github.com/law-lin' target='_blank'>
+            <a
+              href='https://github.com/law-lin'
+              target='_blank'
+              rel='noreferrer'
+            >
               <Button mx='2'>
                 <FaGithub />
               </Button>

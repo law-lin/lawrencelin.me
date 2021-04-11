@@ -12,7 +12,7 @@ const ProjectsPanel = () => {
   return (
     <section>
       <Heading textAlign='center'>Projects</Heading>
-      <SimpleGrid columns={{ sm: 2, md: 3 }} spacing='40px'>
+      <SimpleGrid columns={{ sm: 1, md: 1, lg: 2, xl: 3 }} spacing='40px'>
         <Box>
           <ProjectCard
             href='https://onecase.app/lawrence'

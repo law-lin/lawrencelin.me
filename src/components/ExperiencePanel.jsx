@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-  Heading,
-  Text,
-  Stack,
-  Box,
-  StackDivider,
-  Flex,
-} from '@chakra-ui/react';
+import { Heading, Text, Stack, Box, StackDivider } from '@chakra-ui/react';
 
 const experience = [
   // {

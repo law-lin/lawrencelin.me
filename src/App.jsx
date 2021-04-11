@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ReactTerminal } from 'react-terminal';
-import {
-  useColorMode,
-  IconButton,
-  Container,
-  Button,
-  Center,
-} from '@chakra-ui/react';
+import { useColorMode, IconButton, Container, Button } from '@chakra-ui/react';
 import Elevator from 'elevator.js';
 import { GiElevator } from 'react-icons/gi';
 import './App.css';

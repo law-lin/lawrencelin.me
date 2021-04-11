@@ -2,10 +2,6 @@ import React from 'react';
 
 import './styles.css';
 
-const Card = (props) => {
-  return <div className='card float'>{props.children}</div>;
-};
-
 const ProjectCard = ({
   className,
   href,
@@ -28,7 +24,7 @@ const ProjectCard = ({
         </div>
         <div className='card-content'>
           <div className='thumbnail'>
-            <img src={thumbnail} />
+            <img src={thumbnail} alt={title} />
           </div>
 
           <div className='text'>
