@@ -1,10 +1,5 @@
-section:first-child {
-  /* padding: 0 0 100px 0; */
-  padding: 0;
-  margin: 0;
-}
 section {
-  padding: 40px 0;
+  padding: 60px 0;
   text-align: center;
   margin: 100px 0;
 }
@@ -16,7 +11,7 @@ a.card-link {
 }
 .project-card {
   max-width: 100%;
-  min-width: 250px;
+  min-width: 22-0px;
   min-height: 350px;
   border-radius: 0.25rem;
   margin: 1rem;
@@ -30,7 +25,7 @@ a.card-link {
   transition: 0.5s;
 }
 .project-card:hover {
-  transform: scale(1.1);
+  transform: scale(1.025);
   box-shadow: 0 10px 10px -10px rgba(127, 140, 141, 1);
 }
 

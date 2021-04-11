@@ -1,4 +1,5 @@
 import React from 'react';
+// UI
 import {
   Container,
   Heading,
@@ -12,20 +13,46 @@ import {
   SimpleGrid,
   List,
   ListItem,
+  Button,
 } from '@chakra-ui/react';
 import { MdComputer } from 'react-icons/md';
-import { FaMobile, FaServer, FaDatabase, FaCogs } from 'react-icons/fa';
+import {
+  FaLinkedin,
+  FaGithub,
+  FaMobile,
+  FaServer,
+  FaDatabase,
+  FaCogs,
+} from 'react-icons/fa';
 
 const AboutPanel = () => {
   const { colorMode, toggleColorMode } = useColorMode();
 
   return (
     <>
-      <section>
+      <section style={{ padding: 0, margin: 0 }}>
         <Container display='flex' flexDirection='column' alignItems='center'>
           <img src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Black&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light' />
           <Heading size='3xl'>Lawrence Lin</Heading>
           <Text fontSize='3xl'>Software Developer</Text>
+          <Flex mt='5'>
+            <a
+              href='https://www.linkedin.com/in/lawrencelin101/'
+              target='_blank'
+            >
+              <Button mx='2'>
+                <FaLinkedin />
+              </Button>
+            </a>
+            <a href='https://github.com/law-lin' target='_blank'>
+              <Button mx='2'>
+                <FaGithub />
+              </Button>
+            </a>
+          </Flex>
+          <Text mt='5'>
+            Email me at: lawrencelin101 [squiggly a symbol] gmail [dot] com
+          </Text>
         </Container>
       </section>
       <section>
@@ -34,7 +61,8 @@ const AboutPanel = () => {
           <Box flex='1' px='5'>
             <Text fontSize='lg'>
               I'm a software developer and computer science student at Stony
-              Brook University.
+              Brook University. In my free time, I'm building LEGO sets,
+              developing web applications, gaming, or reading.
             </Text>
           </Box>
         </Container>
@@ -48,7 +76,7 @@ const AboutPanel = () => {
         <Container padding='20px 0'>
           <Heading size='xl'>Skills</Heading>
         </Container>
-        <SimpleGrid columns={5} spacing={10}>
+        <SimpleGrid minChildWidth='150px' columns={5} spacing={10}>
           <Box>
             <Stack>
               <Box display='flex' flexDirection='column' alignItems='center'>
