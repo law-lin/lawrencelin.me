@@ -61,18 +61,20 @@ const AboutPanel = () => {
           </Text>
         </Container>
       </section>
-      <section>
-        <Container>
-          <Heading size='lg'>About Me</Heading>
-          <Box flex='1' px='5'>
-            <Text fontSize='lg'>
-              I'm a software developer and computer science student at Stony
-              Brook University. In my free time, I'm building LEGO sets,
-              developing web applications, gaming, or reading.
-            </Text>
-          </Box>
-        </Container>
-      </section>
+      {/* <section> */}
+      <Container>
+        {/* <Heading size='lg'>About Me</Heading> */}
+        <br />
+        <Box flex='1' px='5'>
+          <Text fontSize='lg'>
+            I'm a software developer and computer science student at Stony Brook
+            University. In my free time, I'm building LEGO sets, hacking
+            something up, gaming, or reading. Feel free to browse my site and/or
+            connect with me on Linkedin!
+          </Text>
+        </Box>
+      </Container>
+      {/* </section> */}
       <section
         style={{
           borderRadius: '14px',

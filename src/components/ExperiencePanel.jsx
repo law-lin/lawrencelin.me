@@ -2,11 +2,16 @@ import React from 'react';
 import { Heading, Text, Stack, Box, StackDivider } from '@chakra-ui/react';
 
 const experience = [
-  // {
-  //   company: 'IBM',
-  //   position: 'Full Stack Developer Intern, May 2021 - August 2021',
-  //   description: 'Vue.js, Node.js, Webpack, Gulp, IBM Cloud',
-  // },
+  {
+    company: 'IBM',
+    position: 'Full Stack Developer Intern, May 2021 - Present',
+    description: 'Vue.js, Node.js, IBM Cloud',
+  },
+  {
+    company: 'Stony Brook University',
+    position: 'Undergraduate Research Assistant, June 2020 - August 2020',
+    description: 'TypeScript, React.js, Node.js, Firebase, Python',
+  },
   {
     company: 'Goodnation',
     position: 'Software Engineering Intern, June 2020 - August 2020',
@@ -26,7 +31,7 @@ const experience = [
 ];
 const ExperienceBox = ({ company, position, description }) => {
   return (
-    <Box px='5'>
+    <Box px='5' py='3'>
       <Heading size='md'>{company}</Heading>
       <Text color='gray.500'>{position}</Text>
       <Text>{description}</Text>

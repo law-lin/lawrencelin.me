@@ -12,7 +12,7 @@ const ProjectCard = ({
   ...other
 }) => {
   return (
-    <a className='card-link' href={href}>
+    <a className='card-link' href={href} target='_blank'>
       <div className='card project-card float'>
         <div className='card-overlay'>
           <div

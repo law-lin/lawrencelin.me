@@ -3,7 +3,9 @@ import { SimpleGrid, Box, Heading } from '@chakra-ui/react';
 import ProjectCard from './ProjectCard';
 
 import onecase from '../assets/onecase.png';
+import camo from '../assets/camo.PNG';
 import showcase from '../assets/showcase_stuff.png';
+import steam from '../assets/steam-game-popularity.PNG';
 import speaclear from '../assets/speaclear.PNG';
 import emoji from '../assets/emoji-of-the-minute.PNG';
 import collink from '../assets/collink.PNG';
@@ -24,6 +26,8 @@ const ProjectsPanel = () => {
         </Box>
         <Box>
           <ProjectCard
+            href='https://usecamo.app'
+            thumbnail={camo}
             title='Camo'
             description='Connect with like-minded students anonymously'
             tags={['JS', 'React Native', 'Node.js', 'Firebase']}
@@ -40,7 +44,16 @@ const ProjectsPanel = () => {
         </Box>
         <Box>
           <ProjectCard
-            href='https://speaclear.online/'
+            href='https://www.youtube.com/watch?v=Aht3wotrrBk&list=PLyCRt3MN8s8OJp-M5UdCQv-NDllAqJOb5&index=4'
+            thumbnail={steam}
+            title='Steam Game Popularity Dashboard'
+            description='Visualize and analyze the popularity of Steam games over time'
+            tags={['JS', 'React.js', 'd3.js', 'Python Flask']}
+          />
+        </Box>
+        <Box>
+          <ProjectCard
+            href='https://speaclear.online'
             thumbnail={speaclear}
             title='Speaclear'
             description='Improve public speaking by identifying filler word usage'
