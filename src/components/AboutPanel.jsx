@@ -1,4 +1,6 @@
 import React from 'react';
+import lawrence from '../assets/lawrence.jpg';
+import Avatar from 'react-avatar';
 // UI
 import {
   Container,
@@ -30,9 +32,11 @@ const AboutPanel = () => {
     <>
       <section style={{ padding: 0, margin: 0 }}>
         <Container display='flex' flexDirection='column' alignItems='center'>
-          <img
-            src='https://avataaars.io/?avatarStyle=Circle&topType=ShortHairShortRound&accessoriesType=Blank&hairColor=Black&facialHairType=Blank&clotheType=Hoodie&clotheColor=Black&eyeType=Default&eyebrowType=DefaultNatural&mouthType=Smile&skinColor=Light'
-            alt='avatar'
+          <Avatar
+            src={lawrence}
+            round={true}
+            size='200'
+            style={{ width: 160 }}
           />
           <Heading size='3xl'>Lawrence Lin</Heading>
           <Text fontSize='3xl'>Software Developer</Text>

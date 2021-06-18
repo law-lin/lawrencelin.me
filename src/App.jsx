@@ -29,7 +29,7 @@ function App() {
   const commands = {
     help: `Supported commands: about, experience, projects,  ${
       colorMode === 'dark' ? 'lightmode' : 'darkmode'
-    }, clear`,
+    }, hellothere, clear`,
     about: () => handleCommandChange('about'),
     experience: () => handleCommandChange('experience'),
     projects: () => handleCommandChange('projects'),
@@ -47,6 +47,7 @@ function App() {
         return "You're already using light mode!";
       }
     },
+    hellothere: () => 'General Kenobi!',
   };
 
   const handleCommandChange = (command) => {

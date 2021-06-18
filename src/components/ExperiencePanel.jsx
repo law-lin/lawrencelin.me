@@ -4,7 +4,7 @@ import { Heading, Text, Stack, Box, StackDivider } from '@chakra-ui/react';
 const experience = [
   {
     company: 'IBM',
-    position: 'Full Stack Developer Intern, May 2021 - Present',
+    position: 'Software Engineer Intern, May 2021 - Present',
     description: 'Vue.js, Node.js, IBM Cloud',
   },
   {
